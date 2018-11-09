@@ -29,26 +29,18 @@
       <object class="GtkNotebook" id="notebook1">
         <property name="visible">True</property>
         <property name="can_focus">True</property>
+        <signal name="create-window" handler="on_notebook1_create_window" swapped="no"/>
+        <signal name="switch-page" handler="on_notebook1_switch_page" swapped="no"/>
         <child>
           <object class="GtkScale" id="scale1">
             <property name="can_focus">True</property>
-            <property name="adjustment">adjustment1</property>
-            <property name="restrict_to_fill_level">False</property>
             <property name="margin_left">6</property>
             <property name="margin_right">6</property>
+            <property name="adjustment">adjustment1</property>
+            <property name="restrict_to_fill_level">False</property>
             <property name="round_digits">0</property>
             <property name="draw_value">False</property>
             <property name="has_origin">False</property>
-            <marks>
-              <mark value="0" position="bottom"></mark>
-              <mark value="1" position="bottom"></mark>
-              <mark value="2" position="bottom"></mark>
-              <mark value="3" position="bottom"></mark>
-              <mark value="4" position="bottom"></mark>
-              <mark value="5" position="bottom"></mark>
-              <mark value="6" position="bottom"></mark>
-              <mark value="7" position="bottom"></mark>
-            </marks>
             <signal name="value-changed" handler="on_scale1_value_changed" swapped="no"/>
           </object>
         </child>
@@ -65,23 +57,13 @@
         <child>
           <object class="GtkScale" id="scale2">
             <property name="can_focus">True</property>
+            <property name="margin_left">6</property>
+            <property name="margin_right">6</property>
             <property name="adjustment">adjustment2</property>
             <property name="restrict_to_fill_level">False</property>
             <property name="round_digits">0</property>
-            <property name="margin_left">6</property>
-            <property name="margin_right">6</property>
             <property name="draw_value">False</property>
             <property name="has_origin">False</property>
-            <marks>
-              <mark value="0" position="bottom"></mark>
-              <mark value="1" position="bottom"></mark>
-              <mark value="2" position="bottom"></mark>
-              <mark value="3" position="bottom"></mark>
-              <mark value="4" position="bottom"></mark>
-              <mark value="5" position="bottom"></mark>
-              <mark value="6" position="bottom"></mark>
-              <mark value="7" position="bottom"></mark>
-            </marks>
             <signal name="value-changed" handler="on_scale2_value_changed" swapped="no"/>
           </object>
           <packing>
@@ -102,23 +84,13 @@
         <child>
           <object class="GtkScale" id="scale3">
             <property name="can_focus">True</property>
-            <property name="adjustment">adjustment3</property>
-            <property name="restrict_to_fill_level">False</property>
             <property name="margin_left">6</property>
             <property name="margin_right">6</property>
+            <property name="adjustment">adjustment3</property>
+            <property name="restrict_to_fill_level">False</property>
             <property name="round_digits">0</property>
             <property name="draw_value">False</property>
             <property name="has_origin">False</property>
-            <marks>
-              <mark value="0" position="bottom"></mark>
-              <mark value="1" position="bottom"></mark>
-              <mark value="2" position="bottom"></mark>
-              <mark value="3" position="bottom"></mark>
-              <mark value="4" position="bottom"></mark>
-              <mark value="5" position="bottom"></mark>
-              <mark value="6" position="bottom"></mark>
-              <mark value="7" position="bottom"></mark>
-            </marks>
             <signal name="value-changed" handler="on_scale3_value_changed" swapped="no"/>
           </object>
           <packing>
